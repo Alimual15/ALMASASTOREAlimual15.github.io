@@ -1,0 +1,306 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente principal */
+    background: linear-gradient(135deg, #ffe6f0, #ffb3cc); /* Fondo degradado rosado */
+    color: #8b2a4a; /* Color de texto */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transiciones suaves */
+}
+
+/* Encabezados con cursiva y sombra */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #d6336c;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px #f8bbd0;
+    font-style: italic; /* Texto en cursiva */
+    transition: color 0.3s ease;
+}
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(135deg, #d6336c, #b02a5a); /* Fondo degradado */
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(214, 51, 108, 0.3); /* Sombra */
+    transition: background-color 0.3s ease;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Marca de navegación */
+.navbar-brand {
+    font-weight: 700;
+    color: white !important;
+    font-size: 1.5rem;
+    font-style: italic; /* Texto en cursiva */
+    transition: color 0.3s ease;
+}
+
+/* Imagen del logo con efecto hover */
+.navbar-brand img {
+    width: 140px !important;
+    height: 140px !important;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Escala al pasar el mouse */
+}
+
+/* Enlaces de navegación */
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-style: italic; /* Texto en cursiva */
+}
+
+.nav-link:hover {
+    color: #ffd6e8 !important; /* Color al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Sección Sobre Nosotros */
+#sobre {
+    padding: 4rem 1rem;
+    background-color: #fff0f6; /* Fondo rosado claro */
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.15); /* Sombra */
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sobre .col-md-6 {
+    padding: 1.5rem; /* Espaciado interno */
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    color: #6b2a4a;
+    text-align: center;
+    font-style: italic; /* Texto en cursiva */
+    transition: color 0.3s ease;
+}
+
+#sobre img.smaller-img-smaller {
+    max-width: 50%;
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.3); /* Sombra */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Productos */
+#productos .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#productos .card-img-top:hover {
+    transform: scale(1.05); /* Escala al pasar el mouse */
+}
+
+/* Métodos de pago */
+#metodos-pago img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#metodos-pago img:hover {
+    transform: scale(1.1); /* Escala al pasar el mouse */
+}
+
+/* Redes sociales */
+#redes-sociales img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#redes-sociales img:hover {
+    transform: scale(1.1); /* Escala al pasar el mouse */
+}
+
+/* Ubicación */
+#ubicacion iframe {
+    border: 0;
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.3); /* Sombra */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Catálogo */
+#catalogo {
+    padding: 3rem 0;
+    background-color: #fff0f6; /* Fondo rosado claro */
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.15); /* Sombra */
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+#catalogo:hover {
+    box-shadow: 0 12px 40px rgba(214, 51, 108, 0.5); /* Sombra al pasar el mouse */
+    transform: translateY(-10px); /* Movimiento hacia arriba */
+    background-color: #ffe0eb; /* Cambio de fondo */
+}
+
+#catalogo a.btn-catalogo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    background-color: #d6336c; /* Color de fondo */
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 0.75rem; /* Bordes redondeados */
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.4); /* Sombra */
+    user-select: none;
+    border: 3px solid #b02a5a; /* Borde */
+    padding: 0 1.5rem;
+    text-align: center;
+    font-style: italic; /* Texto en cursiva */
+}
+
+#catalogo a.btn-catalogo:hover {
+    background-color: #b02a5a; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 12px 35px rgba(176, 42, 90, 0.7); /* Sombra */
+    transform: scale(1.05); /* Escala */
+    color: #ffe6f0; /* Color de texto */
+}
+
+/* Botones primarios */
+.btn-primary {
+    background-color: #d6336c;
+    border-color: #d6336c;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 0 4px 10px rgba(214, 51, 108, 0.4);
+    font-style: italic; /* Texto en cursiva */
+}
+
+.btn-primary:hover {
+    background-color: #b02a5a;
+    border-color: #b02a5a;
+    box-shadow: 0 6px 15px rgba(176, 42, 90, 0.6);
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff0f6;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 35px rgba(214, 51, 108, 0.7);
+}
+
+.card-img-top {
+    border-bottom: 3px solid #d6336c;
+}
+
+.card-title {
+    color: #b02a5a;
+    font-weight: 700;
+    font-style: italic; /* Texto en cursiva */
+    transition: color 0.3s ease;
+}
+
+.card-text {
+    color: #6b2a4a;
+    font-size: 0.95rem;
+    font-style: italic; /* Texto en cursiva */
+    transition: color 0.3s ease;
+}
+
+/* Formularios */
+form {
+    margin-top: 20px;
+    background-color: #fff0f6;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(214, 51, 108, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+input.form-control, textarea.form-control {
+    margin-bottom: 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d6336c;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-style: italic; /* Texto en cursiva */
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #b02a5a;
+    box-shadow: 0 0 0 4px rgba(176, 42, 90, 0.4);
+    outline: none;
+}
+
+/* Lista de elementos */
+.list-group-item {
+    font-size: 1rem;
+    color: #8b2a4a;
+    background-color: #fff0f6;
+    border: 1px solid #f3c6d1;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 12px rgba(214, 51, 108, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-style: italic; /* Texto en cursiva */
+}
+
+.list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(214, 51, 108, 0.3);
+}
+
+/* Pie de página */
+footer {
+    font-size: 0.9rem;
+    color: white;
+    background: linear-gradient(135deg, #d6336c, #b02a5a);
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(176, 42, 90, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-style: italic; /* Texto en cursiva */
+    transition: color 0.3s ease;
+}
+
+footer a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+    font-style: italic; /* Texto en cursiva */
+}
+
+footer a:hover {
+    color: #ffd6e8;
+    text-decoration: none;
+}
