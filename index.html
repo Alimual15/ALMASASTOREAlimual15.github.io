@@ -1,0 +1,160 @@
+<!--
+  Archivo: index.html
+  Descripción: Página principal SPA para la startup "Almas Store" con secciones:
+  encabezado, hero, sobre nosotros, servicios, testimonios, contacto y pie de página.
+  Utiliza Bootstrap 5 para diseño responsivo y moderno.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y configuración -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Almas Store - Skincare & Beauty</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="/styles.css" />
+    <title>ALMASASTOREAlimual15.github.io</title>
+</head>
+<body>
+    <!-- Encabezado con barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <!-- Logo y nombre con imagen -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/imgs/logo.jpg" alt="Logo Almas Store" width="40" height="40" class="me-2 rounded" />
+                    🦋 Almas Store 🦋
+                </a>
+                <!-- Botón para menú colapsable en móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Enlaces de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#metodos-pago">Pago</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicacion</a></li>                       
+                        <li class="nav-item"><a class="nav-link" href="#catalogo">Catalogo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="hero" class="container-fluid bg-light text-center py-5" style="margin-top: 20px;">
+        <div class="container">
+            <h1 class="display-4 text-primary">🦋 Skincare & Beauty 🦋</h1>
+            <p class="lead text-secondary">✨️ Ofrecemos productos de cuidado personal y más.✨️</p>
+            <img src="/imgs/fondo.png" alt="Almas Store" class="img-fluid rounded shadow-sm mt-4" />
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre" class="container py-5">
+        <h2 class="text-center mb-4">Sobre Nosotros</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p>Almas Store es una tienda que revende productos de skincare y belleza, ofreciendo una selección cuidada de marcas reconocidas para el cuidado personal.</p>
+                <p>Nuestro compromiso es brindar soluciones efectivas y seguras para que te sientas y luzcas mejor cada día.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/imgs/nosotros.jpg" alt="Sobre Nosotros" class="img-fluid rounded shadow-sm smaller-img-smaller" />
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Sección Productos -->
+    <section id="productos" class="container py-5">
+    <h2 class="text-center mb-4">Productos</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="/imgs/maquillaje.jpg" class="card-img-top" alt="Producto 1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Maquillaje</h5>
+                    <p class="card-text">Contamos con una amplia variedad en productos para tu rutina de maquillaje</p>
+                    <a href="catalogomaquillaje.html" class="btn btn-primary mt-3">Ver productos</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="/imgs/skincare.jpg" class="card-img-top" alt="Producto 2" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cuidado Facial</h5>
+                    <p class="card-text">Contamos con una amplia variedad en productos para tu rutina de cuidado facial</p>
+                    <a href="catalogoskincare.html" class="btn btn-primary mt-3">Ver productos</a>
+                </div>
+            </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="/imgs/perfumeria.jpg" class="card-img-top" alt="Producto 3" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cuidado corporal</h5>
+                    <p class="card-text">Contamos con una amplia variedad en productos para tu cuidado corporal como perfumes, cremas, etc.</p>
+                    <a href="catalogopersonal.html" class="btn btn-primary mt-3">Ver productos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Métodos de Pago -->
+    <section id="metodos-pago" class="container py-5 bg-light rounded">
+        <h2 class="text-center mb-4">Métodos de Pago</h2>
+        <div class="d-flex justify-content-center gap-4">
+            <img src='/imgs/pago.jpg' alt="Metodos de pago"  />
+            
+        </div>
+    </section>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo" class="container py-5 bg-light rounded">
+        <h2 class="text-center mb-4">Catálogo</h2>
+        <div class="text-center">
+            <a href="https://www.canva.com/design/DAGSuxZ829w/ub4SYbuAgnmqycBNdTXKPA/view?utm_content=DAGSuxZ829w&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="btn btn-catalogo">Ver Catálogo Completo</a>
+        </div>
+    </section>
+
+    <!-- Sección Ubicación -->
+    <section id="ubicacion" class="container py-5">
+        <h2 class="text-center mb-4">Ubicación</h2>
+        <div class="text-center">
+            <p><a href="https://goo.gl/maps/7v6Xq6v7XqvQ7Xqv7" target="_blank" rel="noopener noreferrer">San Roque de Barva, Heredia, Costa Rica</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.1234567890123!2d-84.1234567890123!3d10.1234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e123456789ab%3A0x123456789abcdef!2sSan%20Roque%20de%20Barva%2C%20Heredia%2C%20Costa%20Rica!5e0!3m2!1ses!2sus!4v1234567890123" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p class="mb-2">&copy; 2025 Almas Store. Todos los derechos reservados.</p>
+        <div class="text-center fs-4">
+            <a href="https://www.facebook.com/Almas.StoreCR/" target="_blank" class="text-decoration-none text-pink me-4"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@almas.store.cr?_t=8k1S86qG43y&_r=1" target="_blank" class="text-decoration-none text-pink me-4"><i class="bi bi-tiktok"></i></a>
+            <a href="https://instagram.com/almas_storecr?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="text-decoration-none text-pink me-4"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
