@@ -524,8 +524,15 @@ h1, h2, h3, h4, h5, h6 {
    margin-top: 2rem;
    margin-bottom: 2rem;
    text-align: center;
+   transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
  }
- 
+
+#contacto:hover {
+    box-shadow: 0 12px 40px rgba(214, 51, 108, 0.5); /* Shadow on hover */
+    transform: translateY(-10px); /* Move up on hover */
+    background-color: #ffe0eb; /* Background color change on hover */
+}
+
 #contacto h2 {
   color: #2e7d32; /* Dark green */
   color: #b02a5a; /* Dark pink consistent with site */
@@ -533,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   margin-bottom: 1.5rem;
  }
- 
+
 #contacto a.btn-success {
     background-color: #43a047; /* WhatsApp green */
     border-color: #43a047;
@@ -545,13 +552,13 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.75rem;
     box-shadow: 0 6px 15px rgba(67, 160, 71, 0.5);
     box-shadow: 0 6px 15px rgba(214, 51, 108, 0.4);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     color: white;
     text-decoration: none;
- }
+}
 
 #contacto a.btn-success:hover {
     background-color: #388e3c;
@@ -560,13 +567,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #b02a5a;
     border-color: #b02a5a;
     box-shadow: 0 8px 20px rgba(176, 42, 90, 0.7);
-     text-decoration: none;
- }
- 
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
 #contacto i.bi-whatsapp {
     font-size: 1.5rem;
     color: white;
- }
+}
 
 /* --- Payment Section --- */
 #metodos-pago img {
