@@ -1,4 +1,3 @@
-
 /* Barra de navegación */
 .navbar {
     background: linear-gradient(135deg, #d6336c, #b02a5a); /* Fondo degradado */
@@ -513,6 +512,61 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
     color: var(--secondary-color);
 }
+
+ /* Contact Section Styling */
+#contacto {
+   background-color: #e6f4ea; /* Light green background */
+   background-color: #fff0f6; /* Light pink background consistent with site */
+   border-radius: 1rem;
+   box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3); /* Green shadow */
+   box-shadow: 0 6px 20px rgba(214, 51, 108, 0.15); /* Pink shadow consistent with site */
+   padding: 3rem 1rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   text-align: center;
+ }
+ 
+#contacto h2 {
+  color: #2e7d32; /* Dark green */
+  color: #b02a5a; /* Dark pink consistent with site */
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+ }
+ 
+#contacto a.btn-success {
+    background-color: #43a047; /* WhatsApp green */
+    border-color: #43a047;
+    background-color: #d6336c; /* Pink button consistent with site */
+    border-color: #d6336c;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 15px rgba(67, 160, 71, 0.5);
+    box-shadow: 0 6px 15px rgba(214, 51, 108, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+ }
+
+#contacto a.btn-success:hover {
+    background-color: #388e3c;
+    border-color: #388e3c;
+    box-shadow: 0 8px 20px rgba(56, 142, 60, 0.7);
+    background-color: #b02a5a;
+    border-color: #b02a5a;
+    box-shadow: 0 8px 20px rgba(176, 42, 90, 0.7);
+     text-decoration: none;
+ }
+ 
+#contacto i.bi-whatsapp {
+    font-size: 1.5rem;
+    color: white;
+ }
 
 /* --- Payment Section --- */
 #metodos-pago img {
